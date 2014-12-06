@@ -1,0 +1,116 @@
+<% include header.html %>
+<p><%= content %></p>
+<!--注册-->
+<h2>注册</h2>
+<form method="post" id="signup" action="/signup">
+   <p>cellphone</p>
+   <input type="text" name="cellphone" id="cellphone" value=""/>
+   <p>password</p>
+   <input type="password" name="password" id="password" value=""/>
+   <button id="submit">send</button>
+</form>
+</div>
+<hr/>
+
+<!--登录-->
+<h2>登录</h2>
+<form method="post" id="signup" action="/login">
+   <p>cellphone</p>
+   <input type="text" name="cellphone" id="cellphone" value=""/>
+   <p>password</p>
+   <input type="password" name="password" id="password" value=""/>
+   <button id="submit">send</button>
+</form>
+</div>
+<hr/>
+
+<!--建立shadow-->
+<h2>建立shadow</h2>
+<form method="post" id="signup" action="/found_shadow">
+   <p>手机号</p>
+   <input type="text" name="cellphone" id="cellphone" value=""/>
+   <button id="submit">send</button>
+</form>
+</div>
+<hr/>
+
+<!--绑定手机号-->
+<h2>绑定手机号</h2>
+<form method="post" id="signup" action="/bind_phone">
+   <p>邮箱</p>
+   <input type="text" name="mail" id="mail" value=""/>
+   <p>手机号</p>
+   <input type="text" name="cellphone" id="cellphone" value=""/>
+   <button id="submit">send</button>
+</form>
+</div>
+<hr/>
+
+<!--访问联系人的个人主页-->
+<h2>访问联系人的个人主页</h2>
+<form method="post" id="signup" action="/visit_someone">
+   <p>手机号</p>
+   <input type="text" name="cellphone" id="cellphone" value=""/>
+   <button id="submit">send</button>
+</form>
+</div>
+<hr/>
+
+<!--点击like or hate-->
+<h2>点击like or hate</h2>
+<form method="post" id="signup" action="/like_or_hate">
+   <p>当前用户的邮箱</p>
+   <input type="text" name="mail" id="mail" value=""/>
+   <p>被访问联系人的手机号</p>
+   <input type="text" name="cellphone" id="cellphone" value=""/>
+   <p>like Or hate</p>
+   <input type="text" name="like_or_hate" id="like_or_hate" value=""/>
+   <button id="submit">send</button>
+</form>
+</div>
+<hr/>
+
+<!--发送message-->
+<h2>发送message</h2>
+<form method="post" id="signup" action="/send_message">
+   <p>发送方</p>
+   <input type="text" name="from" id="from" value=""/>
+   <p>接收方</p>
+   <input type="text" name="to" id="to" value=""/>
+   <p>message内容</p>
+   <input type="text" name="text" id="text" value=""/>
+   <button id="submit">send</button>
+</form>
+</div>
+<hr/>
+
+<!--发送email-->
+<h2>发送email</h2>
+<form method="post" id="signup" action="/send_email">
+   <p>email</p>
+   <input type="text" name="email" id="email" value=""/>
+   <p>收信人</p>
+   <input type="text" name="cellphone" id="cellphone" value=""/>
+   <p>内容</p>
+   <input type="text" name="text" id="text" value=""/>
+   <button id="submit">send</button>
+</form>
+</div>
+<hr/>
+
+
+<!--更新token-->
+<h2>更新token</h2>
+<form method="post" id="signup" action="/update_token">
+   <p>cellphone</p>
+   <input type="text" name="cellphone" id="cellphone" value=""/>
+   <p>new token</p>
+   <input type="text" name="token" id="token" value=""/>
+   <button id="submit">send</button>
+</form>
+</div>
+<hr/>
+
+
+<% include footer.html %>
+
